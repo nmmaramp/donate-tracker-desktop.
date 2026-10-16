@@ -1,0 +1,25 @@
+{
+  "name": "mia-app-desktop",
+  "version": "1.0.0",
+  "description": "App Desktop da Userscript Tampermonkey",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.0"
+  },
+  "build": {
+    "appId": "com.mioapp.desktop",
+    "productName": "MiaAppDesktop",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "icona.ico"
+    }
+  }
+}
